@@ -14,12 +14,12 @@ class GetRequester
   def get_response_body 
     uri = URI.parse(@site)
     response = Net::HTTP.get_response(uri)
-    binding.pry 
+
     response.body 
   end 
   
   def parse_json
-    binding.pry 
+ 
     programs = JSON.parse(get_response_body)
     programs.collect do |program| program["agency"]
     end 
