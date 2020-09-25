@@ -22,7 +22,7 @@ class GetRequester
  
     programs = JSON.parse(get_response_body)
     programs
-    end 
+    
   end 
 end 
 
